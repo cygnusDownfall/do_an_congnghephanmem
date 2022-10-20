@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KKzIhH60xiYuMF5V+0GmNdjlgsgpbA8H5AWpoSrXOEOFLSzlAgbxkSt6oEWcyTKjGfn1giWO7frz7lzsOV788g==",
+  "dgSpecHash": "e3/w7GUcBTaRsUKrNz2Soz0IltidNeyaUvQsMOuFrxPUahAQS9Oxk6M470MdezxCHlpnZ0EAH5XaXyMJdKUkWw==",
   "success": true,
   "projectFilePath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tranl\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
