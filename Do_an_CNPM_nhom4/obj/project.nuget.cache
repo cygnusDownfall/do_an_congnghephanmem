@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "KKzIhH60xiYuMF5V+0GmNdjlgsgpbA8H5AWpoSrXOEOFLSzlAgbxkSt6oEWcyTKjGfn1giWO7frz7lzsOV788g==",
+  "dgSpecHash": "DF+PvdXfLDeml3aqznBSrscTcZJ4feciXI1MxV1q7ERXFiOF0FUiW874qtbcyuYyiyQdNuwRWgd2Koq/JAd4zw==",
   "success": true,
-  "projectFilePath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512"
+  ],
   "logs": []
 }

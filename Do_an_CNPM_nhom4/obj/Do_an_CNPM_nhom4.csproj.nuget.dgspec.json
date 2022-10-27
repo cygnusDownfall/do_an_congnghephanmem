@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj": {}
+    "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj": {}
   },
   "projects": {
-    "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj": {
+    "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+        "projectUniqueName": "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
         "projectName": "Do_an_CNPM_nhom4",
-        "projectPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
-        "packagesPath": "C:\\Users\\tranl\\.nuget\\packages\\",
-        "outputPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\obj\\",
+        "projectPath": "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\CNPM Project\\do_an_congnghephanmem-main\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tranl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,6 +53,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.30, 3.1.30]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -63,7 +79,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
         }
       }
     }
