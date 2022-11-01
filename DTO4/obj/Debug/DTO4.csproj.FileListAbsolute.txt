@@ -1,0 +1,12 @@
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\bin\Debug\DTO4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\bin\Debug\DTO4.pdb
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.AssemblyReference.cache
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\obj\Debug\DTO4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\DTO4\obj\Debug\DTO4.pdb
+D:\đồ án CNPM\DTO4\bin\Debug\DTO4.dll
+D:\đồ án CNPM\DTO4\bin\Debug\DTO4.pdb
+D:\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.AssemblyReference.cache
+D:\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.CoreCompileInputs.cache
+D:\đồ án CNPM\DTO4\obj\Debug\DTO4.dll
+D:\đồ án CNPM\DTO4\obj\Debug\DTO4.pdb

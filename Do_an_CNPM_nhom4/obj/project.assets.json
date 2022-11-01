@@ -1,31 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DTO/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../DTO/DTO.csproj",
+      "msbuildProject": "../DTO/DTO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DTO >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\tranl\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
       "projectName": "Do_an_CNPM_nhom4",
-      "projectPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
-      "packagesPath": "C:\\Users\\tranl\\.nuget\\packages\\",
-      "outputPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\Do_an_CNPM_nhom4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\tranl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,13 +51,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\DTO\\DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -70,8 +91,19 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project DTO is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project DTO supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "DTO",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

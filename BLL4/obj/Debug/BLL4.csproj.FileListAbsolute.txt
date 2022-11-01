@@ -10,3 +10,15 @@ C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyC
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DAL4.dll.config
+D:\đồ án CNPM\BLL4\bin\Debug\BLL4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\BLL4.pdb
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\DTO4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.pdb
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.dll.config
+D:\đồ án CNPM\BLL4\bin\Debug\DTO4.pdb
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.AssemblyReference.cache
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyComplete
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
