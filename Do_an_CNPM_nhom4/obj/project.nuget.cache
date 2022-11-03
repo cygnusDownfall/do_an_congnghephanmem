@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ApW9FzS/3Z2meudBBKMBPXulPAY6UCV84AGbBfjx6YWNAXywhYREHaUhfkL9niqjjLXxj8gGlFVseSYoR9uzdQ==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\LENOVO\\OneDrive\\Desktop\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project DTO is not compatible with netcoreapp3.1 (.NETCoreApp,Version=v3.1). Project DTO supports: net6.0 (.NETCoreApp,Version=v6.0)",
-      "libraryId": "DTO",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "dgSpecHash": "pxUyepG/V23BBIhKUlNc4etr2gDEZHz6BXe2Z/6HAlQSrbCRZwWNgnNuWhJhQyZUmM8G4ZJFa1NbJvw+6LXcyA==",
+  "success": true,
+  "projectFilePath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tranl\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\tranl\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\tranl\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\tranl\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }

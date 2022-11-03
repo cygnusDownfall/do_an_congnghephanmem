@@ -7,7 +7,22 @@ using DTO4;
 
 namespace BLL4
 {
-    internal class TaikhoanBLL
+    public class TaikhoanBLL
     {
+        public static void LOGIN(string Name,string Pass)
+        {
+
+        }
+        public static void LOGOUT()
+        {
+            try
+            {
+                TaikhoanDAL.LogOUT();
+            }
+            catch(Exception e)
+            {
+
+            }
+        }
     }
 }
