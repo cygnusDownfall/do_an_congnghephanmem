@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL4</RootNamespace>
     <AssemblyName>BLL4</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +35,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=0.1.0.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Do_an_CNPM_nhom4\packages\ADGV.0.1.0.10\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,10 +56,17 @@
       <Project>{eb4a7741-8de8-4459-8e1e-cd33cd787e01}</Project>
       <Name>DAL4</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Do_an_CNPM_nhom4\Do_an_CNPM_nhom4.csproj">
+      <Project>{8912217a-165d-4374-ab52-caab1e8fa383}</Project>
+      <Name>Do_an_CNPM_nhom4</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO4\DTO4.csproj">
       <Project>{16631bea-f0da-4fd6-9955-597537981304}</Project>
       <Name>DTO4</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
