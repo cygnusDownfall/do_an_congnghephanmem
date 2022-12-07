@@ -8,23 +8,39 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\tranl\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\NhanHuynh\\.nuget\\packages\\": {},
+>>>>>>> NHANsuper
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
       "projectName": "Do_an_CNPM_nhom4",
       "projectPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
       "packagesPath": "C:\\Users\\tranl\\.nuget\\packages\\",
       "outputPath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\obj\\",
+=======
+      "projectUniqueName": "D:\\NHAN\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+      "projectName": "Do_an_CNPM_nhom4",
+      "projectPath": "D:\\NHAN\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+      "packagesPath": "C:\\Users\\NhanHuynh\\.nuget\\packages\\",
+      "outputPath": "D:\\NHAN\\đồ án CNPM\\Do_an_CNPM_nhom4\\obj\\",
+>>>>>>> NHANsuper
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\tranl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\NhanHuynh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> NHANsuper
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "pxUyepG/V23BBIhKUlNc4etr2gDEZHz6BXe2Z/6HAlQSrbCRZwWNgnNuWhJhQyZUmM8G4ZJFa1NbJvw+6LXcyA==",
   "success": true,
   "projectFilePath": "E:\\bt\\do_an_congnghephanmem\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
@@ -8,6 +9,16 @@
     "C:\\Users\\tranl\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\tranl\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\tranl\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
+=======
+  "dgSpecHash": "GOlkuuSllOHNlIMPz4CT13yrUh9UiTVC+lg1pcx37XZjDnPhx5/Qe+LHGK0XarhBAnYZHYsypDsQ05hyMpt6Dw==",
+  "success": true,
+  "projectFilePath": "D:\\NHAN\\đồ án CNPM\\Do_an_CNPM_nhom4\\Do_an_CNPM_nhom4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NhanHuynh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\NhanHuynh\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\NhanHuynh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\NhanHuynh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
+>>>>>>> NHANsuper
   ],
   "logs": []
 }

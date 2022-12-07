@@ -14,8 +14,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL4", "..\DAL4\DAL4.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO4", "..\DTO4\DTO4.csproj", "{16631BEA-F0DA-4FD6-9955-597537981304}"
 EndProject
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Do_an_CNPM_nhom4", "Do_an_CNPM_nhom4.csproj", "{8912217A-165D-4374-AB52-CAAB1E8FA383}"
 EndProject
+=======
+>>>>>>> NHANsuper
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,10 +41,13 @@ Global
 		{16631BEA-F0DA-4FD6-9955-597537981304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16631BEA-F0DA-4FD6-9955-597537981304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16631BEA-F0DA-4FD6-9955-597537981304}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{8912217A-165D-4374-AB52-CAAB1E8FA383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8912217A-165D-4374-AB52-CAAB1E8FA383}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8912217A-165D-4374-AB52-CAAB1E8FA383}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8912217A-165D-4374-AB52-CAAB1E8FA383}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> NHANsuper
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

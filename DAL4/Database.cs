@@ -5,104 +5,69 @@ using DTO4;
 
 namespace DAL4
 {
-    class DataBase
+    public class DataBase
     {
-
-
-        private const string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=QLKhachSan;Integrated Security=True";
-        private static SqlConnection conn;
-        public DataBase(string a, string b)
+        private static SqlConnection con;
+        public static SqlConnection conn(string a, string b)
         {
 
-        }
-        public static bool Connect()
-        {
+            string constr = @"Data source = " + a + "; Initial Catalog=" + b + "; Integrated Security=True";
+
             try
             {
-                conn = new SqlConnection(connectionString);
-                conn.Open();
-                return true;
+                con = new SqlConnection(constr);
+                con.Open();
             }
-            catch (Exception)
+            catch
             {
-                return false;
+                con.Close();
             }
-        }
-
-        public static SqlConnection GetConnection()
-        {
-            if (conn == null)
-                Connect();
-            return conn;
-        }
-        public static void Disconect()
-        {
-            if (conn != null && conn.State == System.Data.ConnectionState.Open)
-                conn.Close();
+            return con;
         }
         public static SqlCommand Cmd(string a)
         {
-            SqlCommand cmd = new SqlCommand(a, DataBase.GetConnection());
-
+            SqlCommand cmd = new SqlCommand(a, conn(@".\SQLEXPRESS", @"QLKS"));
             return cmd;
         }
-        public static void ExeNonQuery(string a)
-        {
-            SqlCommand cmd = new SqlCommand(a, DataBase.GetConnection());
-            cmd.ExecuteNonQuery();
-           // return cmd;
-        }
-
         public static SqlCommand Store(string a)
         {
             SqlCommand cmd = Cmd(a);
             cmd.CommandType = CommandType.StoredProcedure;
             return cmd;
         }
-        public static SqlDataReader Reader(string a)
-        {
-            SqlCommand cmd = Cmd(a);
-            SqlDataReader reader = cmd.ExecuteReader();
-            reader.Read();
-            return reader;
-        }
         public static SqlDataAdapter Adapt(string a)
         {
             SqlCommand cmd = Cmd(a);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            return adapter;
+            SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+            //cmd.ExecuteNonQuery();
+            return adapt;
         }
         public static SqlDataAdapter AdaptStore(string a)
         {
             SqlCommand cmd = Store(a);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            return adapter;
+            SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+           // cmd.ExecuteNonQuery();
+            return adapt;
         }
-
-        public static DataTable data(string a)
+        public static SqlDataReader Reader (string a)
         {
-            SqlDataAdapter da = Adapt(a);
+            SqlCommand cmd = Cmd(a);
+            SqlDataReader dr = cmd.ExecuteReader();
+            return dr;
+        }
+        public static DataTable dt(string a)
+        {
+            SqlDataAdapter adapt = Adapt(a);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            adapt.Fill(dt);
             return dt;
         }
-        public static DataTable dataStore(string a)
+        public static DataTable dtStore(string a)
         {
-            SqlDataAdapter da = AdaptStore(a);
+            SqlDataAdapter adapt = AdaptStore(a);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            adapt.Fill(dt);
             return dt;
         }
-
-
-        public static DataSet ds(string a)
-        {
-            SqlDataAdapter da = Adapt(a);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            return ds;
-        }
-       
-
     }
 }
