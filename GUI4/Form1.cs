@@ -120,5 +120,10 @@ namespace GUI4
         {
 
         }
+
+        private void btnĐatPhong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

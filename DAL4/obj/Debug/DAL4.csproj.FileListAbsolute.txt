@@ -18,3 +18,11 @@ D:\đồ án CNPM\DAL4\obj\Debug\DAL4.csproj.CoreCompileInputs.cache
 D:\đồ án CNPM\DAL4\obj\Debug\DAL4.csproj.CopyComplete
 D:\đồ án CNPM\DAL4\obj\Debug\DAL4.dll
 D:\đồ án CNPM\DAL4\obj\Debug\DAL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\bin\Debug\DAL4.dll.config
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\bin\Debug\DAL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\bin\Debug\DAL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\bin\Debug\DTO4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\bin\Debug\DTO4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\obj\Debug\DAL4.csprojResolveAssemblyReference.cache
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\obj\Debug\DAL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DAL4\obj\Debug\DAL4.pdb

@@ -10,3 +10,6 @@ D:\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.AssemblyReference.cache
 D:\đồ án CNPM\DTO4\obj\Debug\DTO4.csproj.CoreCompileInputs.cache
 D:\đồ án CNPM\DTO4\obj\Debug\DTO4.dll
 D:\đồ án CNPM\DTO4\obj\Debug\DTO4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.csprojResolveAssemblyReference.cache
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.pdb

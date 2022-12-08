@@ -36,3 +36,16 @@ D:\đồ án CNPM\GUI4\obj\Debug\GUI4.csproj.CoreCompileInputs.cache
 D:\đồ án CNPM\GUI4\obj\Debug\GUI4.csproj.CopyComplete
 D:\đồ án CNPM\GUI4\obj\Debug\GUI4.exe
 D:\đồ án CNPM\GUI4\obj\Debug\GUI4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\GUI4.exe.config
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.exe
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\BLL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\DAL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\DTO4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\BLL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\DAL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\bin\Debug\DTO4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csprojResolveAssemblyReference.cache
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.Form1.resources
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.Properties.Resources.resources
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.GenerateResource.Cache

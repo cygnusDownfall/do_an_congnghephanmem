@@ -22,3 +22,5 @@ D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
 D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyComplete
 D:\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
 D:\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.pdb
