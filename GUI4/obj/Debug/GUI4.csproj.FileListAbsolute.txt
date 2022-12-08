@@ -60,11 +60,9 @@ E:\NHAN\đồ án CNPM\GUI4\obj\Debug\GUI4.pdb
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\GUI4.exe.config
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\GUI4.exe
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\GUI4.pdb
-D:\NHAN\đồ án CNPM\GUI4\bin\Debug\BLL4.dll
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\DAL4.dll
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\DTO4.dll
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\System.Xml.Linq.dll
-D:\NHAN\đồ án CNPM\GUI4\bin\Debug\BLL4.pdb
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\DAL4.pdb
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\DAL4.dll.config
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\DTO4.pdb
