@@ -81,3 +81,26 @@ D:\NHAN\đồ án CNPM\GUI4\bin\Debug\AdvancedDataGridView.dll
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\AdvancedDataGridView.xml
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\fr\AdvancedDataGridView.resources.dll
 D:\NHAN\đồ án CNPM\GUI4\bin\Debug\ru\AdvancedDataGridView.resources.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\GUI4.exe.config
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\GUI4.exe
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\GUI4.pdb
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\BLL4.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\DAL4.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\DTO4.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\System.Xml.Linq.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\BLL4.pdb
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\DAL4.pdb
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\DAL4.dll.config
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\DTO4.pdb
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\AdvancedDataGridView.xml
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\fr\AdvancedDataGridView.resources.dll
+E:\bt\do_an_congnghephanmem\GUI4\bin\Debug\ru\AdvancedDataGridView.resources.dll
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.AssemblyReference.cache
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.SuggestedBindingRedirects.cache
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.Form1.resources
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.Properties.Resources.resources
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.GenerateResource.cache
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.CoreCompileInputs.cache
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.csproj.CopyComplete
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.exe
+E:\bt\do_an_congnghephanmem\GUI4\obj\Debug\GUI4.pdb
