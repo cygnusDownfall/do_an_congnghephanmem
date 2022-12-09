@@ -34,6 +34,7 @@ E:\NHAN\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
 E:\NHAN\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyComplete
 E:\NHAN\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
 E:\NHAN\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
+<<<<<<< HEAD
 D:\NHAN\đồ án CNPM\BLL4\bin\Debug\BLL4.dll
 D:\NHAN\đồ án CNPM\BLL4\bin\Debug\BLL4.pdb
 D:\NHAN\đồ án CNPM\BLL4\bin\Debug\DAL4.dll
@@ -54,3 +55,5 @@ E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.csproj.AssemblyReference.cache
 E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
 E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.dll
 E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.pdb
+=======
+>>>>>>> c790a35e0a3d95541d604979b172394413a28cbf

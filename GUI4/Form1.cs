@@ -1,10 +1,13 @@
 ﻿using System;
 using System.CodeDom;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 using DAL4;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace GUI4
 {
 
@@ -12,7 +15,7 @@ namespace GUI4
     public partial class Form1 : Form
     {
 
-
+        
         public Form1()
         {
             InitializeComponent();
@@ -43,6 +46,12 @@ namespace GUI4
             dgvKhachhang.DataSource = Kh;
            
         }
+        private void loadDV()
+        {
+            DataTable dv = DataBase.dt("select * from DICHVU");
+            dgvDichvu.DataSource = dv;
+
+        }
 
         private void loadFPhong()
         {
@@ -60,9 +69,81 @@ namespace GUI4
             DataTable dt = DataBase.dt("select * from LOAIPHONG");
             advancedDataGridView2.DataSource = dt;
         }
+        private void loadDichvu()
+        {
+            DataTable dv = DataBase.dt("select * from LOAIDICHVU");
+            /*lbgiadichvu.DataSource = dv;
+            lbgiadichvu.DisplayMember = "giadichvu";
+            lbgiadichvu.ValueMember = "madichvu";*/
+            foreach (DataRow d in dv.Rows)
+            {
+                string a = "";
+                string b = "";
+                a += d[1].ToString();
+                b += d[2].ToString();
+                clbdichvu.Items.Add(a);
+                lbgiadichvu.Items.Add(b);
+            }
+        }
+        private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
+        {
+            this.pHONGBindingSource.Sort = this.advancedDataGridView1.SortString;
+        }
+
+        private void advancedDataGridView1_FilterStringChanged(object sender, EventArgs e)
+        {
+            this.pHONGBindingSource.Filter = this.advancedDataGridView1.FilterString;
+        }
+
+        private void dgvNguoidung_SortStringChanged(object sender, EventArgs e)
+        {
+            this.dANGNHAPBindingSource.Sort = this.dgvNguoidung.SortString;
+        }
+
+        private void dgvNguoidung_FilterStringChanged(object sender, EventArgs e)
+        {
+            this.dANGNHAPBindingSource.Filter = this.dgvNguoidung.FilterString;
+        }
+
+        private void dgvKhachhang_SortStringChanged(object sender, EventArgs e)
+        {
+            this.kHACHHANGBindingSource.Sort = this.dgvKhachhang.SortString;
+        }
+
+        private void dgvKhachhang_FilterStringChanged(object sender, EventArgs e)
+        {
+            this.kHACHHANGBindingSource.Filter = this.dgvKhachhang.FilterString;
+        }
+
+        private void advancedDataGridView2_SortStringChanged(object sender, EventArgs e)
+        {
+            this.lOAIPHONGBindingSource.Sort = this.advancedDataGridView2.SortString;
+        }
+
+        private void advancedDataGridView2_FilterStringChanged(object sender, EventArgs e)
+        {
+            this.lOAIPHONGBindingSource.Filter = this.advancedDataGridView2.FilterString;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            // TODO: This line of code loads data into the 'qLKSDataSet3.KHACHHANG' table. You can move, or remove it, as needed.
+            this.kHACHHANGTableAdapter1.Fill(this.qLKSDataSet3.KHACHHANG);
+            // TODO: This line of code loads data into the 'qLKSDataSet3.DICHVU' table. You can move, or remove it, as needed.
+            this.dICHVUTableAdapter1.Fill(this.qLKSDataSet3.DICHVU);
+            // TODO: This line of code loads data into the 'qLKSDataSet3.PHONG' table. You can move, or remove it, as needed.
+            this.pHONGTableAdapter1.Fill(this.qLKSDataSet3.PHONG);
+            // TODO: This line of code loads data into the 'qLKSDataSet3.LOAIPHONG' table. You can move, or remove it, as needed.
+            this.lOAIPHONGTableAdapter1.Fill(this.qLKSDataSet3.LOAIPHONG);
+            // TODO: This line of code loads data into the 'qLKSDataSet3.PHIEUDATPHONG' table. You can move, or remove it, as needed.
+            this.pHIEUDATPHONGTableAdapter1.Fill(this.qLKSDataSet3.PHIEUDATPHONG);
+            // TODO: This line of code loads data into the 'qLKSDataSet3.DANGNHAP' table. You can move, or remove it, as needed.
+            this.dANGNHAPTableAdapter1.Fill(this.qLKSDataSet3.DANGNHAP);
+            // TODO: This line of code loads data into the 'qLKSDataSet2.PHIEUDATPHONG' table. You can move, or remove it, as needed.
+            this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet2.PHIEUDATPHONG);
+            // TODO: This line of code loads data into the 'qLKSDataSet1.DICHVU' table. You can move, or remove it, as needed.
+            this.dICHVUTableAdapter.Fill(this.qLKSDataSet1.DICHVU);
+
+
             // TODO: This line of code loads data into the 'qLKSDataSet.LOAIPHONG' table. You can move, or remove it, as needed.
             this.lOAIPHONGTableAdapter.Fill(this.qLKSDataSet.LOAIPHONG);
             // TODO: This line of code loads data into the 'qLKSDataSet.KHACHHANG' table. You can move, or remove it, as needed.
@@ -111,6 +192,7 @@ namespace GUI4
             }
 
 
+            loadDichvu();
 
 
 
@@ -346,14 +428,15 @@ namespace GUI4
                 {
                     txtMaPhieu.Text = txtdatphieu.Text;
                     txtMaKH.Text = listBox1.SelectedItem.ToString();
-                    
-                   
+                    tabControl1.SelectedTab = tabPage2;
+                    tabControl3.SelectedTab = tabPage6;
+
+
                 }
 
             }
-            
+           
 
-            tabControl3.SelectedTab = tabPage6;
         }
         private void btnXN_Click(object sender, EventArgs e)
         {
@@ -379,55 +462,6 @@ namespace GUI4
         }
 
        
-
-        
-
-
-        
-        
-
-        private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
-        {
-            this.pHONGBindingSource.Sort = this.advancedDataGridView1.SortString;
-        }
-
-        private void advancedDataGridView1_FilterStringChanged(object sender, EventArgs e)
-        {
-            this.pHONGBindingSource.Filter = this.advancedDataGridView1.FilterString;
-        }
-
-        private void dgvNguoidung_SortStringChanged(object sender, EventArgs e)
-        {
-            this.dANGNHAPBindingSource.Sort = this.dgvNguoidung.SortString;
-        }
-
-        private void dgvNguoidung_FilterStringChanged(object sender, EventArgs e)
-        {
-            this.dANGNHAPBindingSource.Filter = this.dgvNguoidung.FilterString;
-        }
-
-        private void dgvKhachhang_SortStringChanged(object sender, EventArgs e)
-        {
-            this.kHACHHANGBindingSource.Sort = this.dgvKhachhang.SortString;
-        }
-
-        private void dgvKhachhang_FilterStringChanged(object sender, EventArgs e)
-        {
-            this.kHACHHANGBindingSource.Filter = this.dgvKhachhang.FilterString;
-        }
-
-        private void advancedDataGridView2_SortStringChanged(object sender, EventArgs e)
-        {
-            this.lOAIPHONGBindingSource.Sort = this.advancedDataGridView2.SortString;
-        }
-
-        private void advancedDataGridView2_FilterStringChanged(object sender, EventArgs e)
-        {
-            this.lOAIPHONGBindingSource.Filter = this.advancedDataGridView2.FilterString;
-        }
-
-       
-
         private void advancedDataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex >= 0)
@@ -452,8 +486,7 @@ namespace GUI4
                 dateĐP.Value = DateTime.Parse(row.Cells[3].Value.ToString());
                 nmNgayO.Value = int.Parse(row.Cells[5].Value.ToString());
                 cbDatcoc.Text = row.Cells[6].Value.ToString();
-                txtTHD.Text = row.Cells[7].Value.ToString();
-                txtConlai.Text = (int.Parse(row.Cells[7].Value.ToString()) - int.Parse(row.Cells[6].Value.ToString())).ToString();
+              
                 
                 DataTable t = DataBase.dt("select trangthai from PHONG where maphong = '" + txtMaPhong.Text + "'");
                 DataRow d = t.Rows[0];
@@ -467,30 +500,7 @@ namespace GUI4
                 {
                     btnthuephong.Hide();
                 }
-                
-
-
-                /*else if (a == 2)
-                {
-                    groupBox13.Text = "ĐÃ ĐẶT";
-                    btnSua.Hide();
-                    btnĐatPhong.Hide();
-                    btnHuyPhong.Show();
-                }
-                else if (a == 3)
-                {
-                    groupBox13.Text = "XỬ LÝ PHIẾU NÀY NGAY !!!";
-                    btnĐatPhong.Hide();
-                }
-                else
-                {
-                    groupBox13.Text = "Tiến hành";
-                    btnHuyPhong.Show();
-                    btnĐatPhong.Show();
-                    btnHuyPhong.Show();
-                }*/
             }
-            
         }
 
         private void dgvNguoidung_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -515,7 +525,6 @@ namespace GUI4
                     b = "Quản lý";
                 }
                 cbCvu.Text = b.ToString();
-
             }
         }
 
@@ -585,10 +594,14 @@ namespace GUI4
                 tabControl3.SelectedTab = tabPage6;
             }
         }
-
+        //********************************************************************************************************************************
+        
         private void btnĐatPhong_Click(object sender, EventArgs e)
         {
-
+            //                             insert into PHIEUDATPHONG(maphieudatphong, makhachhang, maphong, ngaythue, ngaytra, songayo, datcoc) values('FP02', 'MK011', 'MO05', '2022-12-05', dateadd(day, 1, '2022-12-06'), 1, 3123, 4324, 3123)
+            SqlCommand cmd = DataBase.Cmd("insert into PHIEUDATPHONG(maphieudatphong,makhachhang,maphong,ngaythue,ngaytra,songayo,datcoc) values ('"+txtMaPhieu.Text+"','"+txtMaKH.Text+"','"+txtMaPhong.Text+"','"+dateĐP.Value+"',dateadd(day,"+nmNgayO.Value+",'"+dateĐP.Value+"'),"+nmNgayO.Value.ToString()+","+cbDatcoc.Text.ToString()+")");
+            cmd.ExecuteNonQuery();
+            loadFPhong();
         }
 
         private void btnSuaNd_Click(object sender, EventArgs e)
@@ -706,6 +719,133 @@ namespace GUI4
             {
                 loadLPhong();
             }
+        }
+        private void btnDatDichvu_Click(object sender, EventArgs e)
+        {
+            tabControl4.SelectedTab = tabPage14;
+        }
+
+        private void btnĐDV_Click(object sender, EventArgs e)
+        {
+            string a = "";
+            float kq = 0;
+                for (int i = 0; i < clbdichvu.CheckedItems.Count; i++)
+                {
+                a += clbdichvu.CheckedIndices[i] + " ";
+                kq += float.Parse(lbgiadichvu.Items[clbdichvu.CheckedIndices[i]].ToString()) + 0;
+
+                }
+                SqlCommand cmd = DataBase.Cmd("Insert into DICHVU(maphieudatphong,makhachhang,dichvu,tongtien) values ('" + txtMaPhieu.Text + "','" + txtMaKH.Text + "','" + a.ToString() + "',"+ kq.ToString() +")");
+                cmd.ExecuteNonQuery();
+                loadDV();
+        }
+        
+        private void btnXoaDV_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = DataBase.Cmd("delete from DICHVU where maphieudatphong = '" + dgvDichvu.CurrentRow.Cells[0].Value.ToString() + "'");
+            cmd.ExecuteNonQuery();
+            loadDV();
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+     
+
+        private void dgvDichvu_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+            lbDichVu.Items.Clear();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvDichvu.Rows[e.RowIndex];
+
+                string[] s = row.Cells[2].Value.ToString().Split(' ');
+                for (int i = 0; i < s.Length - 1; i++)
+                {
+
+                    lbDichVu.Items.Add(clbdichvu.Items[int.Parse(s[i])]);
+                }
+
+            }
+           
+        }
+        private void tabPage12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbDichVu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clbdichvu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbgiadichvu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnsuadvvagia_Click(object sender, EventArgs e)
+        {
+            clbdichvu.Items.Clear();
+            lbgiadichvu.Items.Clear();
+            int s = 0;
+            for (int i = 0; i < lbgiadichvu.SelectedItems.Count; i++)
+            {
+                s = lbgiadichvu.SelectedIndices[i];
+                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
+                DataRow row = dt.Rows[s];
+                
+                SqlCommand gdv = DataBase.Cmd("update LOAIDICHVU set giadichvu = " + txtgdv.Text + " where madichvu = '" + row[0].ToString() + "'");
+                gdv.ExecuteNonQuery();
+            }
+            loadDichvu();
+        }
+
+        private void lbgiadichvu_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsuadvu_Click(object sender, EventArgs e)
+        {
+            clbdichvu.Items.Clear();
+            lbgiadichvu.Items.Clear();
+            int s = 0;
+            for (int i = 0; i < lbgiadichvu.SelectedItems.Count; i++)
+            {
+                s = lbgiadichvu.SelectedIndices[i];
+                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
+                DataRow row = dt.Rows[s];
+
+                SqlCommand gdv = DataBase.Cmd("update LOAIDICHVU set giadichvu = " + txtgdv.Text + " where madichvu = '" + row[0].ToString() + "'");
+                gdv.ExecuteNonQuery();
+            }
+            loadDichvu();
+        }
+
+        private void btnHuyPhong_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = DataBase.Cmd("delete FROM PHIEUDATPHONG WHere maphieudatphong = '" + txtMaPhieu.Text + "'");
+            cmd.ExecuteNonQuery();
+            loadFPhong();
         }
     }
 }
