@@ -72,17 +72,15 @@ namespace GUI4
         private void loadDichvu()
         {
             DataTable dv = DataBase.dt("select * from LOAIDICHVU");
-            /*lbgiadichvu.DataSource = dv;
-            lbgiadichvu.DisplayMember = "giadichvu";
-            lbgiadichvu.ValueMember = "madichvu";*/
+           
             foreach (DataRow d in dv.Rows)
             {
                 string a = "";
                 string b = "";
-                a += d[1].ToString();
+                a += d[1].ToString() + " - " + d[2].ToString();
                 b += d[2].ToString();
                 clbdichvu.Items.Add(a);
-                lbgiadichvu.Items.Add(b);
+               
             }
         }
         private void advancedDataGridView1_SortStringChanged(object sender, EventArgs e)
@@ -139,7 +137,7 @@ namespace GUI4
             // TODO: This line of code loads data into the 'qLKSDataSet3.DANGNHAP' table. You can move, or remove it, as needed.
             this.dANGNHAPTableAdapter1.Fill(this.qLKSDataSet3.DANGNHAP);
             // TODO: This line of code loads data into the 'qLKSDataSet2.PHIEUDATPHONG' table. You can move, or remove it, as needed.
-            this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet2.PHIEUDATPHONG);
+            /*this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet2.PHIEUDATPHONG);
             // TODO: This line of code loads data into the 'qLKSDataSet1.DICHVU' table. You can move, or remove it, as needed.
             this.dICHVUTableAdapter.Fill(this.qLKSDataSet1.DICHVU);
 
@@ -153,7 +151,7 @@ namespace GUI4
             // TODO: This line of code loads data into the 'qLKSDataSet.PHONG' table. You can move, or remove it, as needed.
             this.pHONGTableAdapter.Fill(this.qLKSDataSet.PHONG);
             // TODO: This line of code loads data into the 'qLKSDataSet.PHIEUDATPHONG' table. You can move, or remove it, as needed.
-            this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet.PHIEUDATPHONG);
+            this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet.PHIEUDATPHONG);*/
      
            
             #region Tạo mặc định cho toolbox
@@ -468,7 +466,7 @@ namespace GUI4
             {
                 DataGridViewRow row = this.advancedDataGridView1.Rows[e.RowIndex];
                 txtMP.Text = row.Cells[0].Value.ToString();
-                txtMLP.Text = row.Cells[4].Value.ToString();
+                //txtMLP.Text = row.Cells[4].Value.ToString();
             }
         }
        
@@ -586,7 +584,7 @@ namespace GUI4
         {
             if (txtMP.Text == "")
             {
-                MessageBox.Show("Click chọn trên bảng 1 theo mã loại phòng để lấy mã phòng", "Gợi ý", MessageBoxButtons.OK);
+                MessageBox.Show(" - Click chọn loại phòng ở bảng 1 để tìm mã phòng \n - Click chọn để lấy mã phòng ở bảng 2", "Gợi ý", MessageBoxButtons.OK);
             }
             else
             {
@@ -722,17 +720,21 @@ namespace GUI4
         }
         private void btnDatDichvu_Click(object sender, EventArgs e)
         {
-            tabControl4.SelectedTab = tabPage14;
+            tabControl1.SelectedTab = tabPage5;
+            tabControl4.SelectedTab = tabPage24;
         }
 
         private void btnĐDV_Click(object sender, EventArgs e)
         {
+            
             string a = "";
             float kq = 0;
                 for (int i = 0; i < clbdichvu.CheckedItems.Count; i++)
                 {
                 a += clbdichvu.CheckedIndices[i] + " ";
-                kq += float.Parse(lbgiadichvu.Items[clbdichvu.CheckedIndices[i]].ToString()) + 0;
+                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
+                DataRow row = dt.Rows[clbdichvu.CheckedIndices[i]];
+                kq += int.Parse(row[2].ToString()) + 0;
 
                 }
                 SqlCommand cmd = DataBase.Cmd("Insert into DICHVU(maphieudatphong,makhachhang,dichvu,tongtien) values ('" + txtMaPhieu.Text + "','" + txtMaKH.Text + "','" + a.ToString() + "',"+ kq.ToString() +")");
@@ -789,7 +791,20 @@ namespace GUI4
 
         private void clbdichvu_Click(object sender, EventArgs e)
         {
+            int kq = 0;
+            string a = clbdichvu.SelectedItem.ToString().Trim();
+            string[] s = a.Split('-');
+            txtdsdv.Text= s[0];
+            txtgdv.Text= s[1];
+            for (int i = 0; i < clbdichvu.CheckedItems.Count; i++)
+            {
+               
+                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
+                DataRow row = dt.Rows[clbdichvu.CheckedIndices[i]];
+                kq += int.Parse(row[2].ToString()) + 0;
 
+            }
+            label38.Text = "Tổng tiền là : " + kq.ToString();
         }
 
         private void lbgiadichvu_SelectedIndexChanged(object sender, EventArgs e)
@@ -799,18 +814,18 @@ namespace GUI4
 
         private void btnsuadvvagia_Click(object sender, EventArgs e)
         {
-            clbdichvu.Items.Clear();
-            lbgiadichvu.Items.Clear();
             int s = 0;
-            for (int i = 0; i < lbgiadichvu.SelectedItems.Count; i++)
+            for (int i = 0; i < clbdichvu.SelectedItems.Count; i++)
             {
-                s = lbgiadichvu.SelectedIndices[i];
-                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
-                DataRow row = dt.Rows[s];
+                s = clbdichvu.SelectedIndices[i];
                 
-                SqlCommand gdv = DataBase.Cmd("update LOAIDICHVU set giadichvu = " + txtgdv.Text + " where madichvu = '" + row[0].ToString() + "'");
-                gdv.ExecuteNonQuery();
+                DataTable dt = DataBase.dt("select * from LOAIDICHVU");
+                 DataRow row = dt.Rows[s];
+                 SqlCommand gdv = DataBase.Cmd("update LOAIDICHVU set giadichvu = " + txtgdv.Text + " where madichvu = '" + row[0].ToString() + "'");
+                 gdv.ExecuteNonQuery();
+                
             }
+            clbdichvu.Items.Clear();
             loadDichvu();
         }
 
@@ -826,18 +841,19 @@ namespace GUI4
 
         private void btnsuadvu_Click(object sender, EventArgs e)
         {
-            clbdichvu.Items.Clear();
-            lbgiadichvu.Items.Clear();
+            
+            
             int s = 0;
-            for (int i = 0; i < lbgiadichvu.SelectedItems.Count; i++)
+            for (int i = 0; i < clbdichvu.SelectedItems.Count; i++)
             {
-                s = lbgiadichvu.SelectedIndices[i];
+                s = clbdichvu.SelectedIndices[i];
                 DataTable dt = DataBase.dt("select * from LOAIDICHVU");
                 DataRow row = dt.Rows[s];
 
                 SqlCommand gdv = DataBase.Cmd("update LOAIDICHVU set giadichvu = " + txtgdv.Text + " where madichvu = '" + row[0].ToString() + "'");
                 gdv.ExecuteNonQuery();
             }
+            clbdichvu.Items.Clear();
             loadDichvu();
         }
 
@@ -846,6 +862,23 @@ namespace GUI4
             SqlCommand cmd = DataBase.Cmd("delete FROM PHIEUDATPHONG WHere maphieudatphong = '" + txtMaPhieu.Text + "'");
             cmd.ExecuteNonQuery();
             loadFPhong();
+        }
+
+        private void btnTimphong_Click(object sender, EventArgs e)
+        {
+            tabControl3.SelectedTab = tabPage12;
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = DataBase.Cmd("update PHIEUDATPHONG set maphieudatphong = '"+txtMaPhieu.Text+"',makhachhang ='"+txtMaKH.Text+"' ,maphong = '"+txtMaPhong.Text+"',ngaythue = '"+dateĐP.Value+"',ngaytra = DATEADD(day,"+nmNgayO.Value+",'"+dateĐP.Value+"') , songayo = "+nmNgayO.Value+" where maphieudatphong = '"+txtMaPhieu.Text+"'");
+            cmd.ExecuteNonQuery();
+            loadFPhong();
+        }
+
+        private void btnThemP_Click(object sender, EventArgs e)
+        {
+            //SqlCommand cmd = DataBase.Cmd("insert into ");
         }
     }
 }

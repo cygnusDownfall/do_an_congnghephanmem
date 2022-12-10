@@ -52,6 +52,14 @@
             this.tMk = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dgvNguoidung = new ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dANGNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLKSDataSet3 = new GUI4.QLKSDataSet();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSuaNd = new System.Windows.Forms.Button();
@@ -77,6 +85,14 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dgvDatphong = new ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pHIEUDATPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lbhethanthue = new System.Windows.Forms.ListBox();
@@ -85,7 +101,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btnHuyphieuQH = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnthuephong = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
             this.nmNgayO = new System.Windows.Forms.NumericUpDown();
             this.label39 = new System.Windows.Forms.Label();
@@ -99,14 +114,31 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbDatcoc = new System.Windows.Forms.ComboBox();
             this.btnDatDichvu = new System.Windows.Forms.Button();
+            this.btnTimphong = new System.Windows.Forms.Button();
+            this.btnthuephong = new System.Windows.Forms.Button();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.btnHuyPhong = new System.Windows.Forms.Button();
             this.btnĐatPhong = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtMLP = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.txtMP = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtMLP = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnLocphieu = new System.Windows.Forms.Button();
             this.txtTuDg = new System.Windows.Forms.TextBox();
@@ -118,13 +150,33 @@
             this.btnSuaP = new System.Windows.Forms.Button();
             this.btnThemP = new System.Windows.Forms.Button();
             this.advancedDataGridView2 = new ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.advancedDataGridView1 = new ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.dgvKhachhang = new ADGV.AdvancedDataGridView();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtdatphieu = new System.Windows.Forms.TextBox();
             this.btndatphieu = new System.Windows.Forms.Button();
@@ -154,19 +206,21 @@
             this.tabPage24 = new System.Windows.Forms.TabPage();
             this.lbDichVu = new System.Windows.Forms.ListBox();
             this.dgvDichvu = new ADGV.AdvancedDataGridView();
-            this.label28 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dICHVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.btnsuadvu = new System.Windows.Forms.Button();
             this.btnsuagia = new System.Windows.Forms.Button();
             this.txtgdv = new System.Windows.Forms.TextBox();
             this.txtdsdv = new System.Windows.Forms.TextBox();
-            this.lbgiadichvu = new System.Windows.Forms.ListBox();
-            this.btnXoaDV = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.btnSuaDV = new System.Windows.Forms.Button();
-            this.btnĐDV = new System.Windows.Forms.Button();
             this.clbdichvu = new System.Windows.Forms.CheckedListBox();
+            this.btnXoaDV = new System.Windows.Forms.Button();
+            this.btnĐDV = new System.Windows.Forms.Button();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
@@ -181,53 +235,12 @@
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.cbreset = new System.Windows.Forms.ComboBox();
-            this.qLKSDataSet3 = new GUI4.QLKSDataSet();
-            this.dANGNHAPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dANGNHAPTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.DANGNHAPTableAdapter();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.pHIEUDATPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pHIEUDATPHONGTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.PHIEUDATPHONGTableAdapter();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOAIPHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOAIPHONGTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.LOAIPHONGTableAdapter();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pHONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pHONGTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.PHONGTableAdapter();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dICHVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dICHVUTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.DICHVUTableAdapter();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kHACHHANGTableAdapter1 = new GUI4.QLKSDataSetTableAdapters.KHACHHANGTableAdapter();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -239,6 +252,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pMat1)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoidung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANGNHAPBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet3)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage10.SuspendLayout();
@@ -246,24 +261,31 @@
             this.tabControl3.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatphong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUDATPHONGBindingSource)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmNgayO)).BeginInit();
             this.groupBox13.SuspendLayout();
             this.tabPage12.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pTuDen)).BeginInit();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBindingSource)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachhang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.tabPage24.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichvu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.tabPage25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThietbi)).BeginInit();
@@ -273,13 +295,6 @@
             this.tabControl7.SuspendLayout();
             this.tabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANGNHAPBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUDATPHONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -536,6 +551,70 @@
             this.dgvNguoidung.SortStringChanged += new System.EventHandler(this.dgvNguoidung_SortStringChanged);
             this.dgvNguoidung.FilterStringChanged += new System.EventHandler(this.dgvNguoidung_FilterStringChanged);
             this.dgvNguoidung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNguoidung_CellClick);
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "taikhoan";
+            this.dataGridViewTextBoxColumn2.HeaderText = "taikhoan";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn2.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "matkhau";
+            this.dataGridViewTextBoxColumn3.HeaderText = "matkhau";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "TenND";
+            this.dataGridViewTextBoxColumn4.HeaderText = "TenND";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "SĐT";
+            this.dataGridViewTextBoxColumn5.HeaderText = "SĐT";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn5.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "CMND";
+            this.dataGridViewTextBoxColumn6.HeaderText = "CMND";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn6.Width = 150;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Chucvu";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Chucvu";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 22;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewCheckBoxColumn1.Width = 150;
+            // 
+            // dANGNHAPBindingSource
+            // 
+            this.dANGNHAPBindingSource.DataMember = "DANGNHAP";
+            this.dANGNHAPBindingSource.DataSource = this.qLKSDataSet3;
+            // 
+            // qLKSDataSet3
+            // 
+            this.qLKSDataSet3.DataSetName = "QLKSDataSet";
+            this.qLKSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox2
             // 
@@ -799,19 +878,87 @@
             this.dgvDatphong.RowHeadersWidth = 62;
             this.dgvDatphong.RowTemplate.Height = 28;
             this.dgvDatphong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDatphong.Size = new System.Drawing.Size(1353, 346);
+            this.dgvDatphong.Size = new System.Drawing.Size(1353, 279);
             this.dgvDatphong.TabIndex = 30;
             this.dgvDatphong.TimeFilter = false;
             this.dgvDatphong.SortStringChanged += new System.EventHandler(this.dgvDatphong_SortStringChanged);
             this.dgvDatphong.FilterStringChanged += new System.EventHandler(this.dgvDatphong_FilterStringChanged);
             this.dgvDatphong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatphong_CellClick);
             // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "maphieudatphong";
+            this.dataGridViewTextBoxColumn7.HeaderText = "maphieudatphong";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn7.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "makhachhang";
+            this.dataGridViewTextBoxColumn8.HeaderText = "makhachhang";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn8.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "maphong";
+            this.dataGridViewTextBoxColumn9.HeaderText = "maphong";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn9.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "ngaythue";
+            this.dataGridViewTextBoxColumn10.HeaderText = "ngaythue";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn10.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ngaytra";
+            this.dataGridViewTextBoxColumn12.HeaderText = "ngaytra";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn12.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "songayo";
+            this.dataGridViewTextBoxColumn13.HeaderText = "songayo";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn13.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "datcoc";
+            this.dataGridViewTextBoxColumn14.HeaderText = "datcoc";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn14.Width = 150;
+            // 
+            // pHIEUDATPHONGBindingSource
+            // 
+            this.pHIEUDATPHONGBindingSource.DataMember = "PHIEUDATPHONG";
+            this.pHIEUDATPHONGBindingSource.DataSource = this.qLKSDataSet3;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.tableLayoutPanel1);
             this.groupBox3.Controls.Add(this.groupBox13);
-            this.groupBox3.Location = new System.Drawing.Point(6, 358);
+            this.groupBox3.Location = new System.Drawing.Point(13, 291);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1382, 245);
             this.groupBox3.TabIndex = 23;
@@ -887,8 +1034,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.77032F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.22968F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.tableLayoutPanel1.Controls.Add(this.btnthuephong, 2, 4);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel1.Controls.Add(this.label41, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.nmNgayO, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label39, 0, 3);
@@ -901,33 +1047,25 @@
             this.tableLayoutPanel1.Controls.Add(this.txtMaPhieu, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.cbDatcoc, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnDatDichvu, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnDatDichvu, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnTimphong, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnthuephong, 2, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.28205F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.71795F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(573, 220);
             this.tableLayoutPanel1.TabIndex = 38;
             // 
-            // btnthuephong
-            // 
-            this.btnthuephong.Location = new System.Drawing.Point(266, 145);
-            this.btnthuephong.Name = "btnthuephong";
-            this.btnthuephong.Size = new System.Drawing.Size(147, 40);
-            this.btnthuephong.TabIndex = 41;
-            this.btnthuephong.Text = "Thuê phòng";
-            this.btnthuephong.UseVisualStyleBackColor = true;
-            this.btnthuephong.Click += new System.EventHandler(this.btnthuephong_Click);
-            // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(266, 0);
+            this.label41.Location = new System.Drawing.Point(263, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(81, 20);
             this.label41.TabIndex = 29;
@@ -935,15 +1073,15 @@
             // 
             // nmNgayO
             // 
-            this.nmNgayO.Location = new System.Drawing.Point(147, 113);
+            this.nmNgayO.Location = new System.Drawing.Point(145, 124);
             this.nmNgayO.Name = "nmNgayO";
-            this.nmNgayO.Size = new System.Drawing.Size(113, 26);
+            this.nmNgayO.Size = new System.Drawing.Size(112, 26);
             this.nmNgayO.TabIndex = 27;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(3, 110);
+            this.label39.Location = new System.Drawing.Point(3, 121);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(58, 20);
             this.label39.TabIndex = 26;
@@ -951,7 +1089,7 @@
             // 
             // txtMaPhong
             // 
-            this.txtMaPhong.Location = new System.Drawing.Point(419, 3);
+            this.txtMaPhong.Location = new System.Drawing.Point(416, 3);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.ReadOnly = true;
             this.txtMaPhong.Size = new System.Drawing.Size(126, 26);
@@ -960,9 +1098,9 @@
             // dateĐP
             // 
             this.dateĐP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateĐP.Location = new System.Drawing.Point(147, 82);
+            this.dateĐP.Location = new System.Drawing.Point(145, 82);
             this.dateĐP.Name = "dateĐP";
-            this.dateĐP.Size = new System.Drawing.Size(113, 26);
+            this.dateĐP.Size = new System.Drawing.Size(112, 26);
             this.dateĐP.TabIndex = 20;
             // 
             // label27
@@ -985,9 +1123,9 @@
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(147, 44);
+            this.txtMaKH.Location = new System.Drawing.Point(145, 44);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(113, 26);
+            this.txtMaKH.Size = new System.Drawing.Size(112, 26);
             this.txtMaKH.TabIndex = 14;
             // 
             // label13
@@ -1001,15 +1139,15 @@
             // 
             // txtMaPhieu
             // 
-            this.txtMaPhieu.Location = new System.Drawing.Point(147, 3);
+            this.txtMaPhieu.Location = new System.Drawing.Point(145, 3);
             this.txtMaPhieu.Name = "txtMaPhieu";
-            this.txtMaPhieu.Size = new System.Drawing.Size(113, 26);
+            this.txtMaPhieu.Size = new System.Drawing.Size(112, 26);
             this.txtMaPhieu.TabIndex = 6;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 142);
+            this.label7.Location = new System.Drawing.Point(3, 158);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 20);
             this.label7.TabIndex = 32;
@@ -1018,20 +1156,40 @@
             // cbDatcoc
             // 
             this.cbDatcoc.FormattingEnabled = true;
-            this.cbDatcoc.Location = new System.Drawing.Point(147, 145);
+            this.cbDatcoc.Location = new System.Drawing.Point(145, 161);
             this.cbDatcoc.Name = "cbDatcoc";
-            this.cbDatcoc.Size = new System.Drawing.Size(113, 28);
+            this.cbDatcoc.Size = new System.Drawing.Size(112, 28);
             this.cbDatcoc.TabIndex = 33;
             // 
             // btnDatDichvu
             // 
-            this.btnDatDichvu.Location = new System.Drawing.Point(419, 145);
+            this.btnDatDichvu.Location = new System.Drawing.Point(416, 82);
             this.btnDatDichvu.Name = "btnDatDichvu";
-            this.btnDatDichvu.Size = new System.Drawing.Size(136, 40);
+            this.btnDatDichvu.Size = new System.Drawing.Size(136, 36);
             this.btnDatDichvu.TabIndex = 42;
             this.btnDatDichvu.Text = "Đặt Dịch Vụ";
             this.btnDatDichvu.UseVisualStyleBackColor = true;
             this.btnDatDichvu.Click += new System.EventHandler(this.btnDatDichvu_Click);
+            // 
+            // btnTimphong
+            // 
+            this.btnTimphong.Location = new System.Drawing.Point(416, 124);
+            this.btnTimphong.Name = "btnTimphong";
+            this.btnTimphong.Size = new System.Drawing.Size(136, 31);
+            this.btnTimphong.TabIndex = 43;
+            this.btnTimphong.Text = "Tìm phòng";
+            this.btnTimphong.UseVisualStyleBackColor = true;
+            this.btnTimphong.Click += new System.EventHandler(this.btnTimphong_Click);
+            // 
+            // btnthuephong
+            // 
+            this.btnthuephong.Location = new System.Drawing.Point(263, 82);
+            this.btnthuephong.Name = "btnthuephong";
+            this.btnthuephong.Size = new System.Drawing.Size(136, 36);
+            this.btnthuephong.TabIndex = 41;
+            this.btnthuephong.Text = "Thuê phòng";
+            this.btnthuephong.UseVisualStyleBackColor = true;
+            this.btnthuephong.Click += new System.EventHandler(this.btnthuephong_Click);
             // 
             // groupBox13
             // 
@@ -1075,12 +1233,13 @@
             this.btnSua.TabIndex = 20;
             this.btnSua.Text = "Sửa phiếu";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.tableLayoutPanel3);
+            this.tabPage12.Controls.Add(this.tableLayoutPanel2);
             this.tabPage12.Controls.Add(this.button2);
-            this.tabPage12.Controls.Add(this.txtMLP);
-            this.tabPage12.Controls.Add(this.txtMP);
             this.tabPage12.Controls.Add(this.groupBox5);
             this.tabPage12.Controls.Add(this.groupBox15);
             this.tabPage12.Controls.Add(this.advancedDataGridView2);
@@ -1093,29 +1252,180 @@
             this.tabPage12.UseVisualStyleBackColor = true;
             this.tabPage12.Click += new System.EventHandler(this.tabPage12_Click);
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.textBox3, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtMP, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.textBox4, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.textBox5, 1, 3);
+            this.tableLayoutPanel3.Controls.Add(this.textBox6, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label26, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label28, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label29, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label30, 0, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(393, 231);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 5;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(462, 186);
+            this.tableLayoutPanel3.TabIndex = 42;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(234, 38);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(225, 26);
+            this.textBox3.TabIndex = 43;
+            // 
+            // txtMP
+            // 
+            this.txtMP.Location = new System.Drawing.Point(234, 3);
+            this.txtMP.Name = "txtMP";
+            this.txtMP.Size = new System.Drawing.Size(225, 26);
+            this.txtMP.TabIndex = 37;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(234, 73);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(225, 26);
+            this.textBox4.TabIndex = 44;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(234, 114);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(225, 26);
+            this.textBox5.TabIndex = 45;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(234, 151);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(225, 26);
+            this.textBox6.TabIndex = 46;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(3, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(80, 20);
+            this.label26.TabIndex = 47;
+            this.label26.Text = "Mã phòng";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(3, 35);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(71, 20);
+            this.label28.TabIndex = 48;
+            this.label28.Text = "Diện tích";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(3, 70);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(45, 20);
+            this.label29.TabIndex = 49;
+            this.label29.Text = "Tầng";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(3, 111);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(80, 20);
+            this.label30.TabIndex = 50;
+            this.label30.Text = "Trạng thái";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.label16, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtMLP, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.label10, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 234);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(367, 146);
+            this.tableLayoutPanel2.TabIndex = 41;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(3, 102);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(83, 20);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "Giá phòng";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 51);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 20);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Tên loại phòng";
+            // 
+            // txtMLP
+            // 
+            this.txtMLP.Location = new System.Drawing.Point(186, 3);
+            this.txtMLP.Name = "txtMLP";
+            this.txtMLP.Size = new System.Drawing.Size(178, 26);
+            this.txtMLP.TabIndex = 38;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(186, 54);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(178, 26);
+            this.textBox1.TabIndex = 39;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(186, 105);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(178, 26);
+            this.textBox2.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(3, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(108, 20);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "Mã loại phòng";
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(537, 101);
+            this.button2.Location = new System.Drawing.Point(330, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 60);
+            this.button2.Size = new System.Drawing.Size(107, 58);
             this.button2.TabIndex = 39;
             this.button2.Text = "Xác nhận Mã Phòng";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtMLP
-            // 
-            this.txtMLP.Location = new System.Drawing.Point(125, 206);
-            this.txtMLP.Name = "txtMLP";
-            this.txtMLP.Size = new System.Drawing.Size(192, 26);
-            this.txtMLP.TabIndex = 38;
-            // 
-            // txtMP
-            // 
-            this.txtMP.Location = new System.Drawing.Point(918, 206);
-            this.txtMP.Name = "txtMP";
-            this.txtMP.Size = new System.Drawing.Size(192, 26);
-            this.txtMP.TabIndex = 37;
             // 
             // groupBox5
             // 
@@ -1180,7 +1490,7 @@
             this.groupBox15.Controls.Add(this.btnXuaP);
             this.groupBox15.Controls.Add(this.btnSuaP);
             this.groupBox15.Controls.Add(this.btnThemP);
-            this.groupBox15.Location = new System.Drawing.Point(152, 369);
+            this.groupBox15.Location = new System.Drawing.Point(980, 194);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Size = new System.Drawing.Size(304, 115);
             this.groupBox15.TabIndex = 34;
@@ -1213,6 +1523,7 @@
             this.btnThemP.TabIndex = 22;
             this.btnThemP.Text = "Thêm";
             this.btnThemP.UseVisualStyleBackColor = true;
+            this.btnThemP.Click += new System.EventHandler(this.btnThemP_Click);
             // 
             // advancedDataGridView2
             // 
@@ -1225,17 +1536,49 @@
             this.dataGridViewTextBoxColumn17});
             this.advancedDataGridView2.DataSource = this.lOAIPHONGBindingSource;
             this.advancedDataGridView2.DateWithTime = false;
-            this.advancedDataGridView2.Location = new System.Drawing.Point(3, 42);
+            this.advancedDataGridView2.Location = new System.Drawing.Point(3, 67);
             this.advancedDataGridView2.Name = "advancedDataGridView2";
             this.advancedDataGridView2.RowHeadersWidth = 62;
             this.advancedDataGridView2.RowTemplate.Height = 28;
             this.advancedDataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.advancedDataGridView2.Size = new System.Drawing.Size(516, 158);
+            this.advancedDataGridView2.Size = new System.Drawing.Size(367, 158);
             this.advancedDataGridView2.TabIndex = 33;
             this.advancedDataGridView2.TimeFilter = false;
             this.advancedDataGridView2.SortStringChanged += new System.EventHandler(this.advancedDataGridView2_SortStringChanged);
             this.advancedDataGridView2.FilterStringChanged += new System.EventHandler(this.advancedDataGridView2_FilterStringChanged);
             this.advancedDataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.advancedDataGridView2_CellClick);
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "maloaiphong";
+            this.dataGridViewTextBoxColumn15.HeaderText = "maloaiphong";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn15.Width = 103;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "tenloaiphong";
+            this.dataGridViewTextBoxColumn16.HeaderText = "tenloaiphong";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn16.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "giailoai";
+            this.dataGridViewTextBoxColumn17.HeaderText = "giailoai";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn17.Width = 150;
+            // 
+            // lOAIPHONGBindingSource
+            // 
+            this.lOAIPHONGBindingSource.DataMember = "LOAIPHONG";
+            this.lOAIPHONGBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // advancedDataGridView1
             // 
@@ -1250,17 +1593,67 @@
             this.dataGridViewTextBoxColumn22});
             this.advancedDataGridView1.DataSource = this.pHONGBindingSource;
             this.advancedDataGridView1.DateWithTime = false;
-            this.advancedDataGridView1.Location = new System.Drawing.Point(748, 42);
+            this.advancedDataGridView1.Location = new System.Drawing.Point(393, 67);
             this.advancedDataGridView1.Name = "advancedDataGridView1";
             this.advancedDataGridView1.RowHeadersWidth = 62;
             this.advancedDataGridView1.RowTemplate.Height = 28;
             this.advancedDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(619, 158);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(565, 158);
             this.advancedDataGridView1.TabIndex = 32;
             this.advancedDataGridView1.TimeFilter = false;
             this.advancedDataGridView1.SortStringChanged += new System.EventHandler(this.advancedDataGridView1_SortStringChanged);
             this.advancedDataGridView1.FilterStringChanged += new System.EventHandler(this.advancedDataGridView1_FilterStringChanged);
             this.advancedDataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.advancedDataGridView1_CellClick);
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "maphong";
+            this.dataGridViewTextBoxColumn18.HeaderText = "maphong";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn18.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "maloaiphong";
+            this.dataGridViewTextBoxColumn19.HeaderText = "maloaiphong";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn19.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "dientich";
+            this.dataGridViewTextBoxColumn20.HeaderText = "dientich";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn20.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "tang";
+            this.dataGridViewTextBoxColumn21.HeaderText = "tang";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn21.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "trangthai";
+            this.dataGridViewTextBoxColumn22.HeaderText = "trangthai";
+            this.dataGridViewTextBoxColumn22.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            this.dataGridViewTextBoxColumn22.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn22.Width = 150;
+            // 
+            // pHONGBindingSource
+            // 
+            this.pHONGBindingSource.DataMember = "PHONG";
+            this.pHONGBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // tabPage11
             // 
@@ -1348,6 +1741,92 @@
             this.dgvKhachhang.FilterStringChanged += new System.EventHandler(this.dgvKhachhang_FilterStringChanged);
             this.dgvKhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachhang_CellClick);
             this.dgvKhachhang.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dgvKhachhang_KeyUp);
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "makhachhang";
+            this.dataGridViewTextBoxColumn27.HeaderText = "makhachhang";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn27.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "tenkhachhang";
+            this.dataGridViewTextBoxColumn28.HeaderText = "tenkhachhang";
+            this.dataGridViewTextBoxColumn28.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn28.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "socmnd";
+            this.dataGridViewTextBoxColumn29.HeaderText = "socmnd";
+            this.dataGridViewTextBoxColumn29.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn29.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "ngaysinh";
+            this.dataGridViewTextBoxColumn30.HeaderText = "ngaysinh";
+            this.dataGridViewTextBoxColumn30.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn30.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "tuoi";
+            this.dataGridViewTextBoxColumn31.HeaderText = "tuoi";
+            this.dataGridViewTextBoxColumn31.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn31.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "gioitinh";
+            this.dataGridViewTextBoxColumn32.HeaderText = "gioitinh";
+            this.dataGridViewTextBoxColumn32.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn32.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "sodienthoai";
+            this.dataGridViewTextBoxColumn33.HeaderText = "sodienthoai";
+            this.dataGridViewTextBoxColumn33.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn33.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "diachi";
+            this.dataGridViewTextBoxColumn34.HeaderText = "diachi";
+            this.dataGridViewTextBoxColumn34.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn34.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Ngaytaohs";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Ngaytaohs";
+            this.dataGridViewTextBoxColumn35.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn35.Width = 150;
+            // 
+            // kHACHHANGBindingSource
+            // 
+            this.kHACHHANGBindingSource.DataMember = "KHACHHANG";
+            this.kHACHHANGBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // listBox1
             // 
@@ -1608,8 +2087,9 @@
             // 
             this.tabPage24.Controls.Add(this.lbDichVu);
             this.tabPage24.Controls.Add(this.dgvDichvu);
-            this.tabPage24.Controls.Add(this.label28);
             this.tabPage24.Controls.Add(this.groupBox11);
+            this.tabPage24.Controls.Add(this.btnXoaDV);
+            this.tabPage24.Controls.Add(this.btnĐDV);
             this.tabPage24.Location = new System.Drawing.Point(4, 29);
             this.tabPage24.Name = "tabPage24";
             this.tabPage24.Size = new System.Drawing.Size(1358, 592);
@@ -1622,9 +2102,9 @@
             // 
             this.lbDichVu.FormattingEnabled = true;
             this.lbDichVu.ItemHeight = 20;
-            this.lbDichVu.Location = new System.Drawing.Point(455, 35);
+            this.lbDichVu.Location = new System.Drawing.Point(632, 0);
             this.lbDichVu.Name = "lbDichVu";
-            this.lbDichVu.Size = new System.Drawing.Size(146, 204);
+            this.lbDichVu.Size = new System.Drawing.Size(146, 224);
             this.lbDichVu.TabIndex = 1;
             this.lbDichVu.SelectedIndexChanged += new System.EventHandler(this.lbDichVu_SelectedIndexChanged);
             // 
@@ -1640,23 +2120,55 @@
             this.dataGridViewTextBoxColumn26});
             this.dgvDichvu.DataSource = this.dICHVUBindingSource;
             this.dgvDichvu.DateWithTime = false;
-            this.dgvDichvu.Location = new System.Drawing.Point(8, 28);
+            this.dgvDichvu.Location = new System.Drawing.Point(0, 0);
             this.dgvDichvu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDichvu.Name = "dgvDichvu";
             this.dgvDichvu.RowHeadersWidth = 62;
-            this.dgvDichvu.Size = new System.Drawing.Size(440, 542);
+            this.dgvDichvu.Size = new System.Drawing.Size(625, 224);
             this.dgvDichvu.TabIndex = 8;
             this.dgvDichvu.TimeFilter = false;
             this.dgvDichvu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDichvu_CellClick);
             // 
-            // label28
+            // dataGridViewTextBoxColumn23
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(4, 3);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(248, 20);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "Khách hàng đang sử dụng dịch vụ";
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "maphieudatphong";
+            this.dataGridViewTextBoxColumn23.HeaderText = "maphieudatphong";
+            this.dataGridViewTextBoxColumn23.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            this.dataGridViewTextBoxColumn23.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn23.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "makhachhang";
+            this.dataGridViewTextBoxColumn24.HeaderText = "makhachhang";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn24.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "dichvu";
+            this.dataGridViewTextBoxColumn25.HeaderText = "dichvu";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            this.dataGridViewTextBoxColumn25.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn25.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Tongtien";
+            this.dataGridViewTextBoxColumn26.HeaderText = "Tongtien";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 22;
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
+            this.dataGridViewTextBoxColumn26.Width = 150;
+            // 
+            // dICHVUBindingSource
+            // 
+            this.dICHVUBindingSource.DataMember = "DICHVU";
+            this.dICHVUBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // groupBox11
             // 
@@ -1664,23 +2176,19 @@
             this.groupBox11.Controls.Add(this.btnsuagia);
             this.groupBox11.Controls.Add(this.txtgdv);
             this.groupBox11.Controls.Add(this.txtdsdv);
-            this.groupBox11.Controls.Add(this.lbgiadichvu);
-            this.groupBox11.Controls.Add(this.btnXoaDV);
             this.groupBox11.Controls.Add(this.label38);
             this.groupBox11.Controls.Add(this.label17);
-            this.groupBox11.Controls.Add(this.btnSuaDV);
-            this.groupBox11.Controls.Add(this.btnĐDV);
             this.groupBox11.Controls.Add(this.clbdichvu);
-            this.groupBox11.Location = new System.Drawing.Point(792, 3);
+            this.groupBox11.Location = new System.Drawing.Point(784, 3);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(563, 364);
+            this.groupBox11.Size = new System.Drawing.Size(397, 364);
             this.groupBox11.TabIndex = 0;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Các loại dịch vụ";
             // 
             // btnsuadvu
             // 
-            this.btnsuadvu.Location = new System.Drawing.Point(25, 282);
+            this.btnsuadvu.Location = new System.Drawing.Point(4, 300);
             this.btnsuadvu.Name = "btnsuadvu";
             this.btnsuadvu.Size = new System.Drawing.Size(49, 58);
             this.btnsuadvu.TabIndex = 22;
@@ -1690,7 +2198,7 @@
             // 
             // btnsuagia
             // 
-            this.btnsuagia.Location = new System.Drawing.Point(190, 282);
+            this.btnsuagia.Location = new System.Drawing.Point(194, 300);
             this.btnsuagia.Name = "btnsuagia";
             this.btnsuagia.Size = new System.Drawing.Size(49, 58);
             this.btnsuagia.TabIndex = 21;
@@ -1700,43 +2208,22 @@
             // 
             // txtgdv
             // 
-            this.txtgdv.Location = new System.Drawing.Point(194, 250);
+            this.txtgdv.Location = new System.Drawing.Point(150, 274);
             this.txtgdv.Name = "txtgdv";
             this.txtgdv.Size = new System.Drawing.Size(111, 26);
             this.txtgdv.TabIndex = 20;
             // 
             // txtdsdv
             // 
-            this.txtdsdv.Location = new System.Drawing.Point(4, 250);
+            this.txtdsdv.Location = new System.Drawing.Point(6, 274);
             this.txtdsdv.Name = "txtdsdv";
-            this.txtdsdv.Size = new System.Drawing.Size(180, 26);
+            this.txtdsdv.Size = new System.Drawing.Size(124, 26);
             this.txtdsdv.TabIndex = 19;
-            // 
-            // lbgiadichvu
-            // 
-            this.lbgiadichvu.FormattingEnabled = true;
-            this.lbgiadichvu.ItemHeight = 20;
-            this.lbgiadichvu.Location = new System.Drawing.Point(190, 32);
-            this.lbgiadichvu.Name = "lbgiadichvu";
-            this.lbgiadichvu.Size = new System.Drawing.Size(111, 204);
-            this.lbgiadichvu.TabIndex = 18;
-            this.lbgiadichvu.Click += new System.EventHandler(this.lbgiadichvu_Click);
-            this.lbgiadichvu.SelectedIndexChanged += new System.EventHandler(this.lbgiadichvu_SelectedIndexChanged);
-            // 
-            // btnXoaDV
-            // 
-            this.btnXoaDV.Location = new System.Drawing.Point(307, 32);
-            this.btnXoaDV.Name = "btnXoaDV";
-            this.btnXoaDV.Size = new System.Drawing.Size(147, 71);
-            this.btnXoaDV.TabIndex = 17;
-            this.btnXoaDV.Text = "Xóa";
-            this.btnXoaDV.UseVisualStyleBackColor = true;
-            this.btnXoaDV.Click += new System.EventHandler(this.btnXoaDV_Click);
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(296, 9);
+            this.label38.Location = new System.Drawing.Point(6, 251);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(75, 20);
             this.label38.TabIndex = 16;
@@ -1750,33 +2237,34 @@
             this.label17.Size = new System.Drawing.Size(0, 20);
             this.label17.TabIndex = 6;
             // 
-            // btnSuaDV
+            // clbdichvu
             // 
-            this.btnSuaDV.Location = new System.Drawing.Point(307, 109);
-            this.btnSuaDV.Name = "btnSuaDV";
-            this.btnSuaDV.Size = new System.Drawing.Size(147, 71);
-            this.btnSuaDV.TabIndex = 5;
-            this.btnSuaDV.Text = "Sửa";
-            this.btnSuaDV.UseVisualStyleBackColor = true;
+            this.clbdichvu.FormattingEnabled = true;
+            this.clbdichvu.Location = new System.Drawing.Point(6, 32);
+            this.clbdichvu.Name = "clbdichvu";
+            this.clbdichvu.Size = new System.Drawing.Size(282, 211);
+            this.clbdichvu.TabIndex = 0;
+            this.clbdichvu.Click += new System.EventHandler(this.clbdichvu_Click);
+            // 
+            // btnXoaDV
+            // 
+            this.btnXoaDV.Location = new System.Drawing.Point(165, 232);
+            this.btnXoaDV.Name = "btnXoaDV";
+            this.btnXoaDV.Size = new System.Drawing.Size(147, 71);
+            this.btnXoaDV.TabIndex = 17;
+            this.btnXoaDV.Text = "Xóa";
+            this.btnXoaDV.UseVisualStyleBackColor = true;
+            this.btnXoaDV.Click += new System.EventHandler(this.btnXoaDV_Click);
             // 
             // btnĐDV
             // 
-            this.btnĐDV.Location = new System.Drawing.Point(307, 186);
+            this.btnĐDV.Location = new System.Drawing.Point(12, 232);
             this.btnĐDV.Name = "btnĐDV";
             this.btnĐDV.Size = new System.Drawing.Size(147, 71);
             this.btnĐDV.TabIndex = 3;
             this.btnĐDV.Text = "Đặt dịch vụ";
             this.btnĐDV.UseVisualStyleBackColor = true;
             this.btnĐDV.Click += new System.EventHandler(this.btnĐDV_Click);
-            // 
-            // clbdichvu
-            // 
-            this.clbdichvu.FormattingEnabled = true;
-            this.clbdichvu.Location = new System.Drawing.Point(6, 32);
-            this.clbdichvu.Name = "clbdichvu";
-            this.clbdichvu.Size = new System.Drawing.Size(178, 211);
-            this.clbdichvu.TabIndex = 0;
-            this.clbdichvu.Click += new System.EventHandler(this.clbdichvu_Click);
             // 
             // tabPage25
             // 
@@ -1915,370 +2403,29 @@
             this.cbreset.Text = "Reset";
             this.cbreset.SelectedIndexChanged += new System.EventHandler(this.cbreset_SelectedIndexChanged);
             // 
-            // qLKSDataSet3
-            // 
-            this.qLKSDataSet3.DataSetName = "QLKSDataSet";
-            this.qLKSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dANGNHAPBindingSource
-            // 
-            this.dANGNHAPBindingSource.DataMember = "DANGNHAP";
-            this.dANGNHAPBindingSource.DataSource = this.qLKSDataSet3;
-            // 
             // dANGNHAPTableAdapter1
             // 
             this.dANGNHAPTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "taikhoan";
-            this.dataGridViewTextBoxColumn2.HeaderText = "taikhoan";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn2.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "matkhau";
-            this.dataGridViewTextBoxColumn3.HeaderText = "matkhau";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "TenND";
-            this.dataGridViewTextBoxColumn4.HeaderText = "TenND";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn4.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "SĐT";
-            this.dataGridViewTextBoxColumn5.HeaderText = "SĐT";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn5.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "CMND";
-            this.dataGridViewTextBoxColumn6.HeaderText = "CMND";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn6.Width = 150;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Chucvu";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Chucvu";
-            this.dataGridViewCheckBoxColumn1.MinimumWidth = 22;
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewCheckBoxColumn1.Width = 150;
-            // 
-            // pHIEUDATPHONGBindingSource
-            // 
-            this.pHIEUDATPHONGBindingSource.DataMember = "PHIEUDATPHONG";
-            this.pHIEUDATPHONGBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // pHIEUDATPHONGTableAdapter1
             // 
             this.pHIEUDATPHONGTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "maphieudatphong";
-            this.dataGridViewTextBoxColumn7.HeaderText = "maphieudatphong";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn7.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "makhachhang";
-            this.dataGridViewTextBoxColumn8.HeaderText = "makhachhang";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn8.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "maphong";
-            this.dataGridViewTextBoxColumn9.HeaderText = "maphong";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn9.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "ngaythue";
-            this.dataGridViewTextBoxColumn10.HeaderText = "ngaythue";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn10.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "ngaytra";
-            this.dataGridViewTextBoxColumn12.HeaderText = "ngaytra";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn12.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "songayo";
-            this.dataGridViewTextBoxColumn13.HeaderText = "songayo";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn13.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "datcoc";
-            this.dataGridViewTextBoxColumn14.HeaderText = "datcoc";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn14.Width = 150;
-            // 
-            // lOAIPHONGBindingSource
-            // 
-            this.lOAIPHONGBindingSource.DataMember = "LOAIPHONG";
-            this.lOAIPHONGBindingSource.DataSource = this.qLKSDataSet3;
-            // 
             // lOAIPHONGTableAdapter1
             // 
             this.lOAIPHONGTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "maloaiphong";
-            this.dataGridViewTextBoxColumn15.HeaderText = "maloaiphong";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn15.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "tenloaiphong";
-            this.dataGridViewTextBoxColumn16.HeaderText = "tenloaiphong";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn16.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "giailoai";
-            this.dataGridViewTextBoxColumn17.HeaderText = "giailoai";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn17.Width = 150;
-            // 
-            // pHONGBindingSource
-            // 
-            this.pHONGBindingSource.DataMember = "PHONG";
-            this.pHONGBindingSource.DataSource = this.qLKSDataSet3;
             // 
             // pHONGTableAdapter1
             // 
             this.pHONGTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "maphong";
-            this.dataGridViewTextBoxColumn18.HeaderText = "maphong";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn18.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "maloaiphong";
-            this.dataGridViewTextBoxColumn19.HeaderText = "maloaiphong";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn19.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "dientich";
-            this.dataGridViewTextBoxColumn20.HeaderText = "dientich";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn20.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "tang";
-            this.dataGridViewTextBoxColumn21.HeaderText = "tang";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn21.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.DataPropertyName = "trangthai";
-            this.dataGridViewTextBoxColumn22.HeaderText = "trangthai";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            this.dataGridViewTextBoxColumn22.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn22.Width = 150;
-            // 
-            // dICHVUBindingSource
-            // 
-            this.dICHVUBindingSource.DataMember = "DICHVU";
-            this.dICHVUBindingSource.DataSource = this.qLKSDataSet3;
-            // 
             // dICHVUTableAdapter1
             // 
             this.dICHVUTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.DataPropertyName = "maphieudatphong";
-            this.dataGridViewTextBoxColumn23.HeaderText = "maphieudatphong";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            this.dataGridViewTextBoxColumn23.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn23.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "makhachhang";
-            this.dataGridViewTextBoxColumn24.HeaderText = "makhachhang";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn24.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.DataPropertyName = "dichvu";
-            this.dataGridViewTextBoxColumn25.HeaderText = "dichvu";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            this.dataGridViewTextBoxColumn25.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn25.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Tongtien";
-            this.dataGridViewTextBoxColumn26.HeaderText = "Tongtien";
-            this.dataGridViewTextBoxColumn26.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn26.Width = 150;
-            // 
-            // kHACHHANGBindingSource
-            // 
-            this.kHACHHANGBindingSource.DataMember = "KHACHHANG";
-            this.kHACHHANGBindingSource.DataSource = this.qLKSDataSet3;
-            // 
             // kHACHHANGTableAdapter1
             // 
             this.kHACHHANGTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "makhachhang";
-            this.dataGridViewTextBoxColumn27.HeaderText = "makhachhang";
-            this.dataGridViewTextBoxColumn27.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn27.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "tenkhachhang";
-            this.dataGridViewTextBoxColumn28.HeaderText = "tenkhachhang";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn28.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "socmnd";
-            this.dataGridViewTextBoxColumn29.HeaderText = "socmnd";
-            this.dataGridViewTextBoxColumn29.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn29.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "ngaysinh";
-            this.dataGridViewTextBoxColumn30.HeaderText = "ngaysinh";
-            this.dataGridViewTextBoxColumn30.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn30.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "tuoi";
-            this.dataGridViewTextBoxColumn31.HeaderText = "tuoi";
-            this.dataGridViewTextBoxColumn31.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn31.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "gioitinh";
-            this.dataGridViewTextBoxColumn32.HeaderText = "gioitinh";
-            this.dataGridViewTextBoxColumn32.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn32.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "sodienthoai";
-            this.dataGridViewTextBoxColumn33.HeaderText = "sodienthoai";
-            this.dataGridViewTextBoxColumn33.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn33.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "diachi";
-            this.dataGridViewTextBoxColumn34.HeaderText = "diachi";
-            this.dataGridViewTextBoxColumn34.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn34.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "Ngaytaohs";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Ngaytaohs";
-            this.dataGridViewTextBoxColumn35.MinimumWidth = 22;
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.dataGridViewTextBoxColumn35.Width = 150;
             // 
             // Form1
             // 
@@ -2303,6 +2450,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pMat1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNguoidung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dANGNHAPBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -2312,6 +2461,7 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatphong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHIEUDATPHONGBindingSource)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -2320,23 +2470,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmNgayO)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pTuDen)).EndInit();
             this.groupBox15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pHONGBindingSource)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachhang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.tabPage24.ResumeLayout(false);
-            this.tabPage24.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDichvu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.tabPage25.ResumeLayout(false);
@@ -2347,13 +2503,6 @@
             this.tabControl7.ResumeLayout(false);
             this.tabPage19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dANGNHAPBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHIEUDATPHONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lOAIPHONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pHONGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2424,8 +2573,6 @@
         private System.Windows.Forms.Button btnSuaNd;
         private System.Windows.Forms.Button btnXoaNd;
         private System.Windows.Forms.Button btnThemNd;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Button btnSuaDV;
         private System.Windows.Forms.Button btnĐDV;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.Label label38;
@@ -2523,7 +2670,6 @@
         private System.Windows.Forms.TextBox txtDenDg;
         private System.Windows.Forms.PictureBox pTuDen;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtMLP;
         private System.Windows.Forms.TextBox txtMP;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnthuephong;
@@ -2544,7 +2690,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn makhachhangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dichvuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongtienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ListBox lbgiadichvu;
         private System.Windows.Forms.TextBox txtgdv;
         private System.Windows.Forms.TextBox txtdsdv;
         private System.Windows.Forms.Button btnsuagia;
@@ -2578,16 +2723,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.BindingSource lOAIPHONGBindingSource;
         private QLKSDataSetTableAdapters.LOAIPHONGTableAdapter lOAIPHONGTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.BindingSource pHONGBindingSource;
         private QLKSDataSetTableAdapters.PHONGTableAdapter pHONGTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.BindingSource dICHVUBindingSource;
         private QLKSDataSetTableAdapters.DICHVUTableAdapter dICHVUTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
@@ -2605,6 +2742,31 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.Button btnTimphong;
+        private System.Windows.Forms.TextBox txtMLP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label10;
     }
 }
 
