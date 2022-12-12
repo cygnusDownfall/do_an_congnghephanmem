@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\BLL4.dll
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\BLL4.pdb
 C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DAL4.dll
@@ -57,3 +58,31 @@ E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.dll
 E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.pdb
 =======
 >>>>>>> c790a35e0a3d95541d604979b172394413a28cbf
+=======
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\BLL4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\BLL4.pdb
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DAL4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DTO4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DAL4.pdb
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DTO4.pdb
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.AssemblyReference.cache
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyComplete
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
+C:\Users\LENOVO\OneDrive\Desktop\đồ án CNPM\BLL4\bin\Debug\DAL4.dll.config
+D:\đồ án CNPM\BLL4\bin\Debug\BLL4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\BLL4.pdb
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\DTO4.dll
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.pdb
+D:\đồ án CNPM\BLL4\bin\Debug\DAL4.dll.config
+D:\đồ án CNPM\BLL4\bin\Debug\DTO4.pdb
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.AssemblyReference.cache
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CoreCompileInputs.cache
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.csproj.CopyComplete
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.dll
+D:\đồ án CNPM\BLL4\obj\Debug\BLL4.pdb
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.dll
+C:\Users\M1\Source\Repos\k-dyy\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.pdb
+>>>>>>> a19980cdd3e755da76b7492108f4dbefc37eb354

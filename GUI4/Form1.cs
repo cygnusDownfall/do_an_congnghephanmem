@@ -607,6 +607,7 @@ namespace GUI4
         private void btnSuaNd_Click(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
         }
 
         private void dgvKhachhang_KeyUp(object sender, KeyEventArgs e)
@@ -847,5 +848,13 @@ namespace GUI4
             cmd.ExecuteNonQuery();
             loadFPhong();
         }
+=======
+        }
+
+        private void btnĐatPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> a19980cdd3e755da76b7492108f4dbefc37eb354
     }
 }
