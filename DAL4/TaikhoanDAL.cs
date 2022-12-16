@@ -6,7 +6,6 @@ namespace DAL4
 {
     public class TaikhoanDAL
     {
-<<<<<<< HEAD
         public static void LogIN(string Name, string Pass)
         {
             
@@ -15,8 +14,5 @@ namespace DAL4
         {
 
         }
-=======
-        
->>>>>>> NHANsuper
     }
 }
