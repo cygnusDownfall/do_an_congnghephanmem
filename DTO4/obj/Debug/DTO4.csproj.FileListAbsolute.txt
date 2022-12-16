@@ -31,3 +31,9 @@ E:\bt\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.csproj.AssemblyReference.cache
 E:\bt\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.csproj.CoreCompileInputs.cache
 E:\bt\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.dll
 E:\bt\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.pdb
+E:\bt\do_an_congnghephanmem\DTO4\bin\Debug\DTO4.dll
+E:\bt\do_an_congnghephanmem\DTO4\bin\Debug\DTO4.pdb
+E:\bt\do_an_congnghephanmem\DTO4\bin\Debug\AdvancedDataGridView.xml
+E:\bt\do_an_congnghephanmem\DTO4\bin\Debug\fr\AdvancedDataGridView.resources.dll
+E:\bt\do_an_congnghephanmem\DTO4\bin\Debug\ru\AdvancedDataGridView.resources.dll
+E:\bt\do_an_congnghephanmem\DTO4\obj\Debug\DTO4.csproj.CopyComplete

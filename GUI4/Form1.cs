@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
+using BLL4;
 using DAL4;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -152,8 +153,17 @@ namespace GUI4
             this.pHONGTableAdapter.Fill(this.qLKSDataSet.PHONG);
             // TODO: This line of code loads data into the 'qLKSDataSet.PHIEUDATPHONG' table. You can move, or remove it, as needed.
             this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet.PHIEUDATPHONG);*/
-     
-           
+
+
+            #region ẩn tab controll ngoài đăng nhập 
+            var tab = tabControl1.TabPages;
+            for (int i = 1, length = tab.Count; i < length; i++)
+            {
+                tab[i].Hide();
+            }
+            #endregion
+
+
             #region Tạo mặc định cho toolbox
             pMat0.Hide();
             bĐx.Hide();
@@ -211,13 +221,17 @@ namespace GUI4
         #region tab1
         private void bĐn_Click(object sender, EventArgs e)
         {
-            if (tTk.Text == "1" && tMk.Text == "1")
+            if (TaikhoanBLL.LOGIN(tTk.Text, tMk.Text))
             {
-                MessageBox.Show("thanh cong", "đã đăng nhập", MessageBoxButtons.OK);
-
-                bĐx.Show();
-                bĐn.Hide();
-                bQuen.Hide();
+                var tab=tabControl1.TabPages;
+                for (int i = 1,length=tab.Count; i < length; i++)
+                {
+                    tab[i].Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Dang nhap khong thanh cong!!!");
             }
             groupBox17.Hide();
             txtQCMND.Clear();
