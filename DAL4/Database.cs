@@ -1,5 +1,7 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using System.Data;
+using DTO4;
 
 namespace DAL4
 {
@@ -37,12 +39,14 @@ namespace DAL4
         {
             SqlCommand cmd = Cmd(a);
             SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+            //cmd.ExecuteNonQuery();
             return adapt;
         }
         public static SqlDataAdapter AdaptStore(string a)
         {
             SqlCommand cmd = Store(a);
             SqlDataAdapter adapt = new SqlDataAdapter(cmd);
+           // cmd.ExecuteNonQuery();
             return adapt;
         }
         public static SqlDataReader Reader (string a)
@@ -65,6 +69,5 @@ namespace DAL4
             adapt.Fill(dt);
             return dt;
         }
-          
     }
 }

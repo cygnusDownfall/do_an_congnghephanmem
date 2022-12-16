@@ -57,3 +57,11 @@ E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.dll
 E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.pdb
 =======
 >>>>>>> c790a35e0a3d95541d604979b172394413a28cbf
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\BLL4.dll
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\BLL4.pdb
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\DAL4.dll
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\DTO4.dll
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\DAL4.pdb
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\DAL4.dll.config
+E:\bt\do_an_congnghephanmem\BLL4\bin\Debug\DTO4.pdb
+E:\bt\do_an_congnghephanmem\BLL4\obj\Debug\BLL4.csproj.CopyComplete

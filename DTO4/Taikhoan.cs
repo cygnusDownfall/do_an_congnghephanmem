@@ -7,7 +7,6 @@ namespace DTO4
 {
      class Taikhoan
     {
-
         string username, password;
         bool isAdmin;
         public string Username { get => username; }

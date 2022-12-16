@@ -8,9 +8,16 @@ namespace BLL4
 {
     public class TaikhoanBLL
     {
-        public static void LOGIN(string Name,string Pass)
+        public static bool LOGIN(string Name,string Pass)
         {
-
+            try
+            {
+                return TaikhoanDAL.LogIN(Name,Pass);
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
         public static void LOGOUT()
         {
