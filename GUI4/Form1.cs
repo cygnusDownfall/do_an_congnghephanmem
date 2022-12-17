@@ -11,8 +11,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI4
 {
-
-
     public partial class Form1 : Form
     {
 
@@ -155,15 +153,6 @@ namespace GUI4
             this.pHIEUDATPHONGTableAdapter.Fill(this.qLKSDataSet.PHIEUDATPHONG);*/
 
 
-            #region ẩn tab controll ngoài đăng nhập 
-            var tab = tabControl1.TabPages;
-            for (int i = 1, length = tab.Count; i < length; i++)
-            {
-                tab[i].Hide();
-            }
-            #endregion
-
-
             #region Tạo mặc định cho toolbox
             pMat0.Hide();
             bĐx.Hide();
@@ -219,24 +208,7 @@ namespace GUI4
 
         //-------------------------------tab1-------------------------------------
         #region tab1
-        private void bĐn_Click(object sender, EventArgs e)
-        {
-            if (TaikhoanBLL.LOGIN(tTk.Text, tMk.Text))
-            {
-                var tab=tabControl1.TabPages;
-                for (int i = 1,length=tab.Count; i < length; i++)
-                {
-                    tab[i].Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Dang nhap khong thanh cong!!!");
-            }
-            groupBox17.Hide();
-            txtQCMND.Clear();
-            txtQSDT.Clear();
-        }
+       
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -894,5 +866,19 @@ namespace GUI4
         {
             //SqlCommand cmd = DataBase.Cmd("insert into ");
         }
+
+
+        #region hanche doi tab khi chua dang nhap 
+        bool logIn=false,isAdmin=false;
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
+                e.Cancel =!logIn;
+            if(e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
+            {
+                e.Cancel = !isAdmin;
+            }
+        }
+        #endregion
     }
 }

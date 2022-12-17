@@ -310,6 +310,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1221, 534);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tabControl1_Selecting);
             // 
             // tabPage1
             // 
@@ -1082,7 +1083,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.77032F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.22968F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 136F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
             this.tableLayoutPanel1.Controls.Add(this.label41, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.nmNgayO, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label39, 0, 3);
@@ -1114,7 +1115,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(233, 0);
+            this.label41.Location = new System.Drawing.Point(232, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(68, 16);
             this.label41.TabIndex = 29;
@@ -1122,7 +1123,7 @@
             // 
             // nmNgayO
             // 
-            this.nmNgayO.Location = new System.Drawing.Point(129, 98);
+            this.nmNgayO.Location = new System.Drawing.Point(128, 98);
             this.nmNgayO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nmNgayO.Name = "nmNgayO";
             this.nmNgayO.Size = new System.Drawing.Size(98, 22);
@@ -1139,7 +1140,7 @@
             // 
             // txtMaPhong
             // 
-            this.txtMaPhong.Location = new System.Drawing.Point(369, 2);
+            this.txtMaPhong.Location = new System.Drawing.Point(368, 2);
             this.txtMaPhong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaPhong.Name = "txtMaPhong";
             this.txtMaPhong.ReadOnly = true;
@@ -1149,7 +1150,7 @@
             // dateĐP
             // 
             this.dateĐP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateĐP.Location = new System.Drawing.Point(129, 64);
+            this.dateĐP.Location = new System.Drawing.Point(128, 64);
             this.dateĐP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateĐP.Name = "dateĐP";
             this.dateĐP.Size = new System.Drawing.Size(98, 22);
@@ -1175,7 +1176,7 @@
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(129, 34);
+            this.txtMaKH.Location = new System.Drawing.Point(128, 34);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(98, 22);
@@ -1192,7 +1193,7 @@
             // 
             // txtMaPhieu
             // 
-            this.txtMaPhieu.Location = new System.Drawing.Point(129, 2);
+            this.txtMaPhieu.Location = new System.Drawing.Point(128, 2);
             this.txtMaPhieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaPhieu.Name = "txtMaPhieu";
             this.txtMaPhieu.Size = new System.Drawing.Size(98, 22);
@@ -1210,7 +1211,7 @@
             // cbDatcoc
             // 
             this.cbDatcoc.FormattingEnabled = true;
-            this.cbDatcoc.Location = new System.Drawing.Point(129, 128);
+            this.cbDatcoc.Location = new System.Drawing.Point(128, 128);
             this.cbDatcoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDatcoc.Name = "cbDatcoc";
             this.cbDatcoc.Size = new System.Drawing.Size(98, 24);
@@ -1218,7 +1219,7 @@
             // 
             // btnDatDichvu
             // 
-            this.btnDatDichvu.Location = new System.Drawing.Point(369, 64);
+            this.btnDatDichvu.Location = new System.Drawing.Point(368, 64);
             this.btnDatDichvu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDatDichvu.Name = "btnDatDichvu";
             this.btnDatDichvu.Size = new System.Drawing.Size(121, 29);
@@ -1229,7 +1230,7 @@
             // 
             // btnTimphong
             // 
-            this.btnTimphong.Location = new System.Drawing.Point(369, 98);
+            this.btnTimphong.Location = new System.Drawing.Point(368, 98);
             this.btnTimphong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimphong.Name = "btnTimphong";
             this.btnTimphong.Size = new System.Drawing.Size(121, 25);
@@ -1240,7 +1241,7 @@
             // 
             // btnthuephong
             // 
-            this.btnthuephong.Location = new System.Drawing.Point(233, 64);
+            this.btnthuephong.Location = new System.Drawing.Point(232, 64);
             this.btnthuephong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnthuephong.Name = "btnthuephong";
             this.btnthuephong.Size = new System.Drawing.Size(121, 29);
@@ -2235,7 +2236,7 @@
             this.dgvDichvu.DataSource = this.dICHVUBindingSource;
             this.dgvDichvu.DateWithTime = false;
             this.dgvDichvu.Location = new System.Drawing.Point(0, 0);
-            this.dgvDichvu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDichvu.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDichvu.Name = "dgvDichvu";
             this.dgvDichvu.RowHeadersWidth = 62;
             this.dgvDichvu.Size = new System.Drawing.Size(556, 179);
