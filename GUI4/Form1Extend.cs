@@ -14,11 +14,7 @@ namespace GUI4
         {
             if (TaikhoanBLL.LOGIN(tTk.Text, tMk.Text))
             {
-                var tab = tabControl1.TabPages;
-                for (int i = 1, length = tab.Count; i < length; i++)
-                {
-                    tab[i].Show();
-                }
+                logIn=true;
             }
             else
             {
@@ -28,6 +24,17 @@ namespace GUI4
             txtQCMND.Clear();
             txtQSDT.Clear();
         }
-
+        #region hanche doi tab khi chua dang nhap 
+        bool logIn = false, isAdmin = false;
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
+                e.Cancel = !logIn;
+            if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
+            {
+                e.Cancel = !isAdmin;
+            }
+        }
+        #endregion
     }
 }

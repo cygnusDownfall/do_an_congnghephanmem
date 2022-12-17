@@ -868,17 +868,6 @@ namespace GUI4
         }
 
 
-        #region hanche doi tab khi chua dang nhap 
-        bool logIn=false,isAdmin=false;
-        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
-        {
-            if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
-                e.Cancel =!logIn;
-            if(e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
-            {
-                e.Cancel = !isAdmin;
-            }
-        }
-        #endregion
+     
     }
 }
