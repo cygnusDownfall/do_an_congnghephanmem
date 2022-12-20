@@ -867,7 +867,6 @@ namespace GUI4
             //SqlCommand cmd = DataBase.Cmd("insert into ");
         }
 
-
-     
+        
     }
 }

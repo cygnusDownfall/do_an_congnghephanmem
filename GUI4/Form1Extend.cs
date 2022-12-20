@@ -12,9 +12,10 @@ namespace GUI4
     {
         private void bĐn_Click(object sender, EventArgs e)
         {
-            if (TaikhoanBLL.LOGIN(tTk.Text, tMk.Text))
+            if (TaikhoanBLL.LOGIN(tTk.Text, tMk.Text,isAdmin))
             {
-                logIn=true;
+                logIn = true;
+                MessageBox.Show("Dang nhap thanh cong!");
             }
             else
             {
@@ -29,10 +30,36 @@ namespace GUI4
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
             if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
-                e.Cancel = !logIn;
+            {
+                if (!logIn)
+                {
+                    MessageBox.Show("Hey anh bạn!! Đăng nhập đi để mở khóa các tính năng của chúng tôi!!");
+                    e.Cancel = !logIn;
+                }
+            }
+
+        }
+        private void tabControl2_Selecting(object sender, TabControlCancelEventArgs e)
+        {
             if (e.Action == TabControlAction.Selecting && e.TabPageIndex != 0)
             {
-                e.Cancel = !isAdmin;
+                if (!isAdmin)
+                {
+                    MessageBox.Show("Hey anh bạn!! Anh bạn đâu phải quản lý đâu !!");
+                    e.Cancel = !isAdmin;
+                }
+            }
+        }
+        private void tabControl3_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.Action == TabControlAction.Selecting && e.TabPageIndex == 1)
+            {
+                if (!isAdmin)
+                {
+                    MessageBox.Show("Hey anh bạn!! Anh bạn đâu phải quản lý đâu !!");
+                    e.Cancel = !isAdmin;
+                }
+
             }
         }
         #endregion

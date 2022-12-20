@@ -6,12 +6,14 @@ namespace DAL4
 {
     public class TaikhoanDAL
     {
-        public static bool LogIN(string Name, string Pass)
+        public static bool LogIN(string Name, string Pass,ref bool admin)
         {
-            DataTable res = DataBase.dtStore(string.Format("select * where taikhoan='{0}' and matkhau='{1}'",Name,Pass));
+            DataTable res = DataBase.dtStore(string.Format("select Chucvu from DANGNHAP  where taikhoan='{0}' and matkhau='{1}'",Name,Pass));
             if(res == null) return false;
             if(res.Rows.Count ==1)
             {
+                if (res.Rows[0][0].ToString() == "1") { admin = true; }
+                else { admin = false; }
                 return true;
             }
             return false;
